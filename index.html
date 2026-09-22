@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Khushi ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:Poppins,sans-serif;background:#0b0610;color:#fff;
+ overflow-x:hidden;
+}
+body:before{
+ content:"";position:fixed;inset:0;z-index:-2;
+ background:radial-gradient(circle at 20% 20%,#681344,transparent 35%),
+ radial-gradient(circle at 80% 80%,#321050,transparent 40%),#0b0610;
+}
+body:after{
+ content:"";position:fixed;inset:0;z-index:-1;opacity:.13;
+ background-image:radial-gradient(#fff 1px,transparent 1px);
+ background-size:38px 38px;pointer-events:none;
+}
+nav{
+ position:fixed;top:0;width:100%;z-index:10;
+ display:flex;justify-content:space-between;align-items:center;
+ padding:18px 7%;background:#0b0610aa;backdrop-filter:blur(15px);
+}
+.logo{font:700 28px 'Dancing Script';color:#ff9fc8}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:12px}
+section{padding:90px 7%;text-align:center}
+.hero{
+ min-height:100vh;display:flex;flex-direction:column;
+ justify-content:center;align-items:center;padding:120px 20px 60px;
+}
+.small{color:#ff9fc8;letter-spacing:4px;font-size:11px}
+h1{
+ font:700 clamp(58px,12vw,125px) 'Dancing Script';
+ background:linear-gradient(90deg,#fff,#ff70ad,#fff);
+ background-size:200%;-webkit-background-clip:text;color:transparent;
+ animation:shine 5s linear infinite;line-height:1.1;margin-top:20px;
+}
+h2{font:700 clamp(45px,8vw,85px) 'Dancing Script';color:#ff9fc8}
+.hero p{max-width:520px;color:#e5bfd2;line-height:1.9;margin:25px 0;font-size:14px}
+.btn{
+ display:inline-block;border:0;border-radius:50px;padding:14px 27px;
+ background:linear-gradient(135deg,#ff4f91,#a91661);color:white;
+ font-weight:600;cursor:pointer;text-decoration:none;
+ box-shadow:0 8px 30px #ff4f9335;transition:.3s;
+}
+.btn:hover{transform:translateY(-3px)}
+.music-btn{
+ position:fixed;right:20px;bottom:22px;z-index:20;
+ border:1px solid #ff9fc866;background:#5e1744ee;
+ backdrop-filter:blur(10px);padding:13px 20px;
+ border-radius:50px;color:white;cursor:pointer;
+ box-shadow:0 8px 30px #0005;font-weight:600;
+}
+.music-btn.playing{background:#ff4f91}
+@keyframes shine{to{background-position:200%}}
+.title{margin:12px 0 35px}
+.box{
+ max-width:760px;margin:auto;padding:35px 25px;border:1px solid #ff9fc833;
+ border-radius:25px;background:#ffffff08;backdrop-filter:blur(10px);
+}
+.box p{color:#f2dce6;line-height:2;font-size:14px}
+.signature{font:32px 'Dancing Script';color:#ff9fc8;margin-top:22px}
+.cake-area{
+ height:230px;display:flex;flex-direction:column;
+ justify-content:end;align-items:center;margin:20px auto 35px;
+}
+.cake{
+ width:220px;height:120px;background:linear-gradient(#ffb0cb,#cf376f);
+ border-radius:12px 12px 18px 18px;position:relative;
+ box-shadow:0 15px 35px #0008;
+}
+.cake:before{
+ content:"";position:absolute;top:0;left:0;width:100%;height:27px;
+ background:#ffe5ef;border-radius:12px 12px 50% 50%;
+}
+.cake:after{
+ content:"♥  ♥  ♥  ♥";position:absolute;bottom:25px;left:0;
+ width:100%;color:#ffe5ef;letter-spacing:9px;
+}
+.candle{
+ position:absolute;width:13px;height:52px;top:-49px;
+ left:calc(50% - 6px);
+ background:repeating-linear-gradient(45deg,#fff 0 8px,#ff4f91 8px 16px);
+ border-radius:3px;
+}
+.flame{
+ position:absolute;width:20px;height:29px;top:-79px;
+ left:calc(50% - 10px);background:#ffd166;
+ border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+ box-shadow:0 0 25px #ffd166;animation:flicker .8s infinite alternate;
+}
+@keyframes flicker{to{transform:rotate(-40deg) scale(1.15)}}
+.plate{width:270px;height:14px;background:#f7d6e4;border-radius:50%;margin-top:12px}
+.gallery{
+ max-width:950px;margin:auto;display:grid;
+ grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.photo{border:1px solid #ff9fc833;border-radius:20px;overflow:hidden;background:#ffffff08}
+.photo img{width:100%;height:270px;object-fit:cover;display:block}
+.photo p{padding:14px;color:#ffc5dc;font:23px 'Dancing Script'}
+.surprise{
+ max-width:650px;margin:auto;padding:35px 25px;border-radius:25px;
+ background:#ff4f9110;border:1px solid #ff9fc833;
+}
+#secret{display:none;margin-top:25px;font:30px 'Dancing Script';color:#ffd0e2;line-height:1.6}
+#secret.show{display:block;animation:appear .7s ease}
+@keyframes appear{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+footer{text-align:center;padding:35px;color:#c99bb2;font-size:12px;border-top:1px solid #ffffff10}
+footer span{color:#ff4f91}
+.heart{position:fixed;bottom:-30px;pointer-events:none;z-index:2;animation:up linear forwards}
+@keyframes up{0%{opacity:0;transform:translateY(0)}15%{opacity:.8}100%{opacity:0;transform:translateY(-110vh) rotate(360deg)}}
+@media(max-width:650px){
+ nav{padding:15px 18px}.logo{font-size:23px}
+ nav a{margin-left:8px;font-size:10px}
+ section{padding:65px 20px}.hero{min-height:95vh}
+ .gallery{grid-template-columns:1fr;max-width:360px}
+ .photo img{height:300px}.box{padding:28px 20px}
+ .box p{font-size:13px}
+ .music-btn{right:12px;bottom:15px;font-size:12px;padding:12px 16px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div class="logo">For Khushi ❤️</div>
+ <div>
+  <a href="#home">Home</a>
+  <a href="#wishes">Wishes</a>
+  <a href="#memories">Photos</a>
+ </div>
+</nav>
+
+<!-- MUSIC BUTTON -->
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+ 🎵 Play Music
+</button>
+
+<!-- YOUR SONG -->
+<audio id="birthdayMusic" loop>
+ <source src="Mann Jogiya - Arijit Singh _ Ishita Vishwakarma _ Hindi.mp3" type="audio/mpeg">
+ Your browser does not support audio.
+</audio>
+
+<section class="hero" id="home">
+ <div class="small">A SPECIAL DAY FOR A SPECIAL PERSON ✨</div>
+ <h1>Happy Birthday</h1>
+ <h2>Khushi ❤️</h2>
+ <p>
+  To the girl who makes every moment beautiful,
+  may your smile never fade and your happiness
+  never end.
+ </p>
+ <a href="#wishes" class="btn">Open Your Wishes 💌</a>
+</section>
+
+<section id="wishes">
+ <div class="small">FROM MY HEART</div>
+ <h2 class="title">For You, Khushi</h2>
+ <div class="box">
+  <p>
+   Happy Birthday Karshu ❤️
+   <br><br>
+   Tumhari smile meri favourite cheez hai.
+   Tumhari khushi mere liye bahut special hai.
+   <br><br>
+   Main chahta hoon tumhari life hamesha
+   pyaar, khushiyon aur beautiful moments se
+   bhari rahe.
+   <br><br>
+   Thank you for being such a beautiful part
+   of my life. You deserve all the love
+   and happiness in the world.
+  </p>
+  <div class="signature">Always yours, Harshu ❤️</div>
+ </div>
+</section>
+
+<section>
+ <div class="small">MAKE A WISH 🎂</div>
+ <h2 class="title">Your Birthday Cake</h2>
+ <div class="cake-area">
+  <div class="cake">
+   <div class="candle"></div>
+   <div class="flame"></div>
+  </div>
+  <div class="plate"></div>
+ </div>
+ <p style="color:#e5bfd2;margin-bottom:25px">
+  May every candle bring a new reason to smile. ✨
+ </p>
+ <button class="btn" onclick="blowCandle()">Make a Wish 🕯️</button>
+</section>
+
+<section id="memories">
+ <div class="small">OUR BEAUTIFUL MOMENTS</div>
+ <h2 class="title">Memories With You 📸</h2>
+ <div class="gallery">
+  <div class="photo">
+   <img src="Snapchat-1068555404.jpg" alt="Our memory">
+   <p>Our special moment ❤️</p>
+  </div>
+  <div class="photo">
+   <img src="kh.jpg" alt="A beautiful memory"> 
+   <p>Your beautiful smile ✨</p>
+  </div>
+  <div class="photo">
+   <img src="Snapchat-2113344089.jpg" alt="Our lovely memory">
+   <p>Forever memories 💕</p>
+  </div>
+ </div>
+ <p style="color:#c99bb2;font-size:12px;margin-top:20px">
+  Replace photo1.jpg, photo2.jpg and photo3.jpg with your photos.
+ </p>
+</section>
+
+<section>
+ <div class="small">ONE MORE THING...</div>
+ <h2 class="title">A Little Surprise 🎁</h2>
+ <div class="surprise">
+  <p style="color:#e5bfd2;margin-bottom:25px">
+   Click below to open your special birthday surprise.
+  </p>
+  <button class="btn" onclick="showSurprise()">Open My Surprise 💝</button>
+  <div id="secret">
+   Khushi, you are so special to me. ❤️
+   <br>
+   Happy Birthday once again!
+   <br>
+   Stay happy, stay smiling,
+   <br>
+   and keep shining forever. ✨
+  </div>
+ </div>
+</section>
+
+<footer>
+ Made with <span>❤️</span> by Harshu for Khushi
+ <br>Happy Birthday 2026 🎂
+</footer>
+
+<script>
+// MUSIC
+const music = document.getElementById("birthdayMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+function toggleMusic(){
+ if(music.paused){
+  music.play().then(()=>{
+   musicBtn.textContent="⏸️ Pause Music";
+   musicBtn.classList.add("playing");
+  }).catch(()=>{
+   alert("Song file nahi mili. song.mp3 ko index.html ke same folder mein rakho.");
+  });
+ }else{
+  music.pause();
+  musicBtn.textContent="🎵 Play Music";
+  musicBtn.classList.remove("playing");
+ }
+}
+
+// FLOATING HEARTS
+function createHeart(){
+ const h=document.createElement("div");
+ h.className="heart";
+ h.textContent=["❤️","💕","💗","💖","✨"][Math.floor(Math.random()*5)];
+ h.style.left=Math.random()*100+"vw";
+ h.style.fontSize=12+Math.random()*20+"px";
+ h.style.animationDuration=5+Math.random()*5+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),10000);
+}
+setInterval(createHeart,500);
+
+// CANDLE
+function blowCandle(){
+ document.querySelector(".flame").style.display="none";
+ alert("✨ Wish made! May all your dreams come true, Khushi! ❤️");
+ for(let i=0;i<15;i++)setTimeout(createHeart,i*100);
+}
+
+// SURPRISE
+function showSurprise(){
+ document.getElementById("secret").classList.add("show");
+ for(let i=0;i<25;i++)setTimeout(createHeart,i*100);
+}
+</script>
+
+</body>
+</html>
